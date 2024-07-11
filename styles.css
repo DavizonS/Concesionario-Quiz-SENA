@@ -1,0 +1,110 @@
+body, h1, h2, h3, p, form, input, button, a, table, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+section {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.vendedores-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.vendedores-section table th, .vendedores-section table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.vendedores-section table th {
+    background-color: #005f73;
+    color: white;
+}
+
+.venta-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.venta-section form label {
+    font-weight: bold;
+}
+
+.venta-section form input, .venta-section form select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.venta-section form input[type="submit"] {
+    background-color: #005f73;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.venta-section form input[type="submit"]:hover {
+    background-color: #003d4d;
+}
+
+footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

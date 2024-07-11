@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quix 2024 - Nueva Venta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quix 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="automoviles.html">Automóviles</a></li>
+                <li><a href="vendedores.html">Vendedores</a></li>
+                <li><a href="servicios.html">Servicios Oficiales</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="venta-section">
+            <h2>Registrar Nueva Venta</h2>
+            <form action="procesar_venta.html" method="post">
+                <label for="vendedor">Vendedor:</label>
+                <input type="text" id="vendedor" name="vendedor" required>
+                
+                <label for="automovil">Automóvil:</label>
+                <input type="text" id="automovil" name="automovil" required>
+                
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required>
+                
+                <label for="extras">Extras:</label>
+                <input type="text" id="extras" name="extras">
+                
+                <label for="precio_extras">Precio de Extras:</label>
+                <input type="number" id="precio_extras" name="precio_extras">
+                
+                <label for="modo_pago">Modo de Pago:</label>
+                <select id="modo_pago" name="modo_pago" required>
+                    <option value="contado">Al Contado</option>
+                    <option value="financiera">Financiera</option>
+                </select>
+                
+                <label for="fecha_entrega">Fecha de Entrega:</label>
+                <input type="date" id="fecha_entrega" name="fecha_entrega" required>
+                
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" required>
+                
+                <label for="stock">¿De Stock?</label>
+                <select id="stock" name="stock" required>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <input type="submit" value="Registrar Venta">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Quix - Todos los autos son verdaderos</p>
+    </footer>
+</body>
+</html>

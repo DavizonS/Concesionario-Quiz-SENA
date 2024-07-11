@@ -1,0 +1,84 @@
+body, h1, h2, h3, p, form, input, button, a, table, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+section {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.servicios-section .servicio-oficial {
+    margin-bottom: 1em;
+}
+
+.servicios-section .servicio-oficial button {
+    background-color: #005f73;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.servicios-section .servicio-oficial button:hover {
+    background-color: #003d4d;
+}
+
+.servicios-section .servicio-info {
+    display: none;
+    padding: 1em;
+    background-color: #e0f7fa;
+    border: 1px solid #005f73;
+    border-radius: 4px;
+    margin-top: 0.5em;
+}
+
+footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
